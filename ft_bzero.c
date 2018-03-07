@@ -6,7 +6,7 @@
 /*   By: famartin <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/23 16:14:26 by famartin          #+#    #+#             */
-/*   Updated: 2018/02/27 14:36:00 by famartin         ###   ########.fr       */
+/*   Updated: 2018/03/07 13:31:21 by famartin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 void	ft_bzero(void *s, size_t n)
 {
-	int		i;
-	char	*ptr;
+	size_t		i;
+	char		*ptr;
 
 	if (!n)
 		return ;

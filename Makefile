@@ -1,21 +1,8 @@
-# **************************************************************************** #
-#                                                                              #
-#                                                         :::      ::::::::    #
-#    Makefile                                           :+:      :+:    :+:    #
-#                                                     +:+ +:+         +:+      #
-#    By: famartin <marvin@42.fr>                    +#+  +:+       +#+         #
-#                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2018/02/22 10:12:05 by famartin          #+#    #+#              #
-#    Updated: 2018/03/05 21:36:46 by famartin         ###   ########.fr        #
-#                                                                              #
-# **************************************************************************** #
+FLAG = -Wall -Wextra -Werror
 
-CC = gcc
-CFLAGS = -Iincludes -Wall -Wextra -Werror
-NAME =  libft.a
-OBJ = *.o
-FILES = libft.h\
-		ft_is_blank.c\
+NAME = libft.a
+
+SRC = ft_is_blank.c\
 		ft_skip_preceding.c\
 		ft_hello_world.c\
 		ft_putnbr.c\
@@ -81,18 +68,24 @@ FILES = libft.h\
 		ft_lstiter.c\
 		ft_lstmap.c
 
+
+OBJ = $(SRC:.c=.o)
+
 all: $(NAME)
 
-$(NAME):
-	$(CC) $(CFLAGS ) -c $(FILES)
-	ar cr $(NAME) $(OBJ)
-	ranlib $(NAME)
+$(NAME): $(OBJ)
+	@ar rc $(NAME) $(OBJ)
+	@ranlib $(NAME)
+
+%.o: %.c
+	@gcc $(FLAG) -c $< -o $@
 
 clean:
-	rm -f $(OBJ) *.gch
+	@rm -f $(OBJ)
 
 fclean: clean
-	rm -f $(NAME)
+	@rm -f $(NAME)
 
 re: fclean all
 
+.PHONY: all, clean, fclean, re

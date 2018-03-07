@@ -6,7 +6,7 @@
 /*   By: famartin <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/23 16:15:20 by famartin          #+#    #+#             */
-/*   Updated: 2018/03/01 18:39:25 by famartin         ###   ########.fr       */
+/*   Updated: 2018/03/07 13:32:38 by famartin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-	char	*src_ptr;
-	char	*dst_ptr;
-	int		i;
+	char		*src_ptr;
+	char		*dst_ptr;
+	size_t		i;
 
 	i = -1;
 	src_ptr = (char *)src;

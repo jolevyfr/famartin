@@ -6,7 +6,7 @@
 /*   By: famartin <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/23 16:15:01 by famartin          #+#    #+#             */
-/*   Updated: 2018/03/01 18:38:03 by famartin         ###   ########.fr       */
+/*   Updated: 2018/03/07 13:32:10 by famartin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,9 @@
 void	*ft_memccpy(void *restrict dst,
 		const void *restrict src, int c, size_t n)
 {
-	int		i;
-	char	*dst_ptr;
-	char	*src_ptr;
+	size_t		i;
+	char		*dst_ptr;
+	char		*src_ptr;
 
 	i = 0;
 	dst_ptr = dst;

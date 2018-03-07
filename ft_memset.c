@@ -6,7 +6,7 @@
 /*   By: famartin <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/21 15:11:41 by famartin          #+#    #+#             */
-/*   Updated: 2018/02/27 14:37:01 by famartin         ###   ########.fr       */
+/*   Updated: 2018/03/07 13:30:53 by famartin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 void	*ft_memset(void *b, int c, size_t len)
 {
-	int		i;
-	char	*str;
+	size_t		i;
+	char		*str;
 
 	i = 0;
 	str = b;

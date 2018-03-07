@@ -6,7 +6,7 @@
 /*   By: famartin <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/23 16:16:27 by famartin          #+#    #+#             */
-/*   Updated: 2018/02/26 19:38:08 by famartin         ###   ########.fr       */
+/*   Updated: 2018/03/07 13:33:28 by famartin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_strncpy(char *dst, const char *src, size_t len)
 {
-	int	i;
+	size_t	i;
 
 	i = 0;
 	while (i < len)
